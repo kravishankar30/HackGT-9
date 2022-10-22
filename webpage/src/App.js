@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+<<<<<<< Updated upstream
   return (
     <div className="App">
       <header className="App-header">
@@ -20,6 +21,32 @@ function App() {
       </header>
     </div>
   );
+=======
+  const [file, changeFile] = useState();
+  const [isFile, switchFile] = useState(false);
+
+  return(    
+    <div class="App">
+      <p>Upload CSV:</p>
+      <input type="file" name="file" onChange={(event) => {
+        switchFile(true);
+        changeFile(event.target.files[0]);
+        // send file?
+        }} />
+
+      <label for="type-selector"></label>
+      <select id="type-selector">
+        <option>Linear</option>
+        <option>Scatter</option>
+      </select>
+
+      {isFile && <>
+      <p>File uploaded!</p>
+      </>
+      }
+     </div>
+   )
+>>>>>>> Stashed changes
 }
 
 export default App;
