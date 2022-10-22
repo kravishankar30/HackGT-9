@@ -1,16 +1,15 @@
 {
   "files": {
-    "main.css": "/HackGT-9/static/css/main.073c9b0a.css",
-    "main.js": "/HackGT-9/static/js/main.409d79a6.js",
+    "main.css": "/HackGT-9/static/css/main.0a9dbc9e.css",
+    "main.js": "/HackGT-9/static/js/main.3a2013e9.js",
     "static/js/787.98498dfe.chunk.js": "/HackGT-9/static/js/787.98498dfe.chunk.js",
-    "static/media/logo.svg": "/HackGT-9/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/HackGT-9/index.html",
-    "main.073c9b0a.css.map": "/HackGT-9/static/css/main.073c9b0a.css.map",
-    "main.409d79a6.js.map": "/HackGT-9/static/js/main.409d79a6.js.map",
+    "main.0a9dbc9e.css.map": "/HackGT-9/static/css/main.0a9dbc9e.css.map",
+    "main.3a2013e9.js.map": "/HackGT-9/static/js/main.3a2013e9.js.map",
     "787.98498dfe.chunk.js.map": "/HackGT-9/static/js/787.98498dfe.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.409d79a6.js"
+    "static/css/main.0a9dbc9e.css",
+    "static/js/main.3a2013e9.js"
   ]
 }
