@@ -1,10 +1,57 @@
 .App {
-  text-align: center;background-color: #282c34;
+  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 10px;
+}
+
+div.horizontal {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  align-items: center;
+  margin: 0px 2px;
+}
+
+input {
+  color: white;
+  border: none;
+  font-size: calc(10px + 2vmin);
+}
+
+button {
+  color: white;
+  background-color: #ffffff10;
+  border: none;
+  display: inline-block;
+  font-size: calc(10px + 2vmin);
+}
+
+select {
+  color: white;
+  background-color: #ffffff10;
+  margin: 0 8px;
+  padding: 6px 6px;
+  border: none;
+  display: inline-block;
+  font-size: calc(10px + 2vmin);
+}
+
+option {
+  color: #282c34;
+  border: none;
+  display: inline-block;
+  font-size: calc(10px + 2vmin);
+}
+
+input[type=text] {
+  background-color: #ffffff10;
+  width: 100%;
+  margin: 0 8px;
+  padding: 6px 6px;
 }
