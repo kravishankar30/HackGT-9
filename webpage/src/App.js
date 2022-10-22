@@ -1,52 +1,44 @@
-import logo from './logo.svg';
+import { useState } from 'react';
+
 import './App.css';
 
 function App() {
-<<<<<<< Updated upstream
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-=======
   const [file, changeFile] = useState();
   const [isFile, switchFile] = useState(false);
+  const [x, changeX] = useState("");
+  const [y, changeY] = useState("");
 
   return(    
-    <div class="App">
-      <p>Upload CSV:</p>
+    <div className="App">
+    <div className="horizontal">
+      <label htmlFor="file">Upload CSV:</label>
       <input type="file" name="file" onChange={(event) => {
         switchFile(true);
         changeFile(event.target.files[0]);
-        // send file?
+        // send file? make temporary file htmlFor processing?
         }} />
-
-      <label for="type-selector"></label>
+      <label htmlFor="type-selector">Choose a graph type:</label>
       <select id="type-selector">
-        <option>Linear</option>
-        <option>Scatter</option>
+        <option value="lin">Linear</option>
+        <option value="sc">Scatter</option>
       </select>
+        </div>
+    <div className="horizontal">
+      <label htmlFor="x-axis">Horizontal:</label>
+      <input type="text" name="x-axis" onChange={(event) => {changeX(event.target.value)}}/>
+      <label htmlFor="y-axis">Vertical:</label>
+      <input type="text" name="y-axis" onChange={(event) => {changeY(event.target.value)}}/>
+    </div>
 
+    <div className="horizontal">
+    <button onClick={() => {console.log("foo")}}>Press me!</button>
+    </div>
       {isFile && <>
       <p>File uploaded!</p>
       </>
       }
      </div>
    )
->>>>>>> Stashed changes
 }
 
 export default App;
